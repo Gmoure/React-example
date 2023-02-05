@@ -2,13 +2,15 @@ import { Navbar, Nav, Container } from "react-bootstrap"
 import { Outlet, Link } from "react-router-dom"
 
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css'
 
 export function NavBar() {
   return (
     <>    
        <Navbar className="navBg" expand="lg">
         <Container>
-            <Navbar.Brand as={Link} to="/" >React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" className="nav_logo">Brand Example</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -21,10 +23,11 @@ export function NavBar() {
             </Navbar.Collapse>
         </Container>
         </Navbar>  
-
-        <section>
+        <section className="section">
             <Outlet></Outlet>
         </section> 
+
+        
        </> 
   )
 }

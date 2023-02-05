@@ -1,4 +1,4 @@
-import { Carousel } from "./Carousel";
+import { Slider } from "./Carousel";
 import { InfoSection } from "./InfoSection";
 
 import React from 'react'
@@ -6,7 +6,7 @@ import React from 'react'
 export function Home() {
   return (
     <>
-    <Carousel />
+    <Slider />
     <InfoSection/>
     </>
   )
